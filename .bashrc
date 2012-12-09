@@ -10,6 +10,10 @@ if [ -f $HOME/.alias_work ]
 then
     source $HOME/.alias_work
 fi
+if [ -f $HOME/.alias_general ]
+then
+    source $HOME/.alias_general
+fi
 
 set -o vi
 
