@@ -52,7 +52,7 @@ function prompt {
     bakcyn='\e[46m'   # Cyan
     bakwht='\e[47m'   # White
     txtrst='\e[0m'    # Text Reset
-    export PS1='\[\033[01;37m\]\u@\h:\W\$\[\033[01;37m\]\e[00m '
+    export PS1='\[\033[01;37m\]\u@\h:\W\$\[\033[0m\] '
 }
 prompt
 
