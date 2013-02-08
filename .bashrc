@@ -1,9 +1,20 @@
 #!/bin/bash
 export PATH=/usr/bin:/opt/subversion/bin:/opt/local/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export MAVEN_OPTS=-Xmx1024m
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Set default editor to vim
+export EDITOR=vim
+set -o vi
+
+# Avoid duplicates in bash command history
 export HISTCONTROL='ignoreboth:erasedups'
+
+# Ignore password stuff, passwd
 export HISTIGNORE="ls:passwd;"
+
+# Increase history size
 export HISTSIZE=5000
 
 #alias files
@@ -16,5 +27,4 @@ then
     source $HOME/.alias_general
 fi
 
-set -o vi
 
