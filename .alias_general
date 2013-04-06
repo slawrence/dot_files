@@ -1,2 +1,2 @@
 #!/bin/bash
-alias ls='ls -alG'
+alias ls='ls -alG --color'
