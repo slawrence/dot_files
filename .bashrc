@@ -29,6 +29,10 @@ export HISTSIZE=5000
 export LANG=en_US.utf-8
 
 #alias files
+if [ -f $HOME/.alias_private ]
+then
+    source $HOME/.alias_private
+fi
 if [ -f $HOME/.alias_work ]
 then
     source $HOME/.alias_work
