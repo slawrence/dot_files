@@ -16,6 +16,11 @@ export MAVEN_OPTS=-Xmx1024m
 export EDITOR=vim
 set -o vi
 
+# Color prompt
+# \e[  - start color scheme
+# \e[m - stop color scheme
+PS1='\[\e[0;31m\]\u\[\e[m\]\[\e[0;33m\] \W\$\[\e[0m\] '
+
 # Avoid duplicates in bash command history
 export HISTCONTROL='ignoreboth:erasedups'
 
@@ -27,6 +32,9 @@ export HISTSIZE=5000
 
 # Set LANG/encoding
 export LANG=en_US.utf-8
+
+# Resolve color issues
+export TERM=xterm-256color
 
 #alias files
 if [ -f $HOME/.alias_private ]
