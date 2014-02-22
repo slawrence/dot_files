@@ -34,7 +34,7 @@ export HISTSIZE=5000
 export LANG=en_US.utf-8
 
 # Resolve color issues
-export TERM=xterm-256color
+export TERM=screen-256color
 
 #alias files
 if [ -f $HOME/.alias_private ]
