@@ -5,6 +5,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Scripts from repos
 PATH=$PATH:$HOME/repos/git-submodule-tools #add git submodule scripts
+PATH=$PATH:$HOME/.cabal/bin
 
 # Custom Scripts folder in $HOME/bin
 PATH=$PATH:$HOME/bin # Add custom scripts
