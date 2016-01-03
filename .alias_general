@@ -1,4 +1,5 @@
 #!/bin/bash
-alias ls='ls -G'
+alias ls='ls -Ga'
 alias dt='tmux detach'
 alias at='tmux attach -t'
+alias sw='tmux switch-client -t'
